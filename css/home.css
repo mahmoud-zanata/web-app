@@ -1,0 +1,198 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+    body {
+      /* Linear gradient background */
+      background: linear-gradient(to bottom, #9adff0, #0d3170      ); /* Replace these colors with your desired colors */
+      /* Fallback color if gradients are not supported */
+      background-color: #88dcf1; /* Fallback color */
+      /* Other styles */
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      /* Adjustments to ensure content is readable */
+      color: #333; /* Text color */
+  }
+  
+
+  
+
+  header {
+    background: #4ecfef; 
+    color: #fff; 
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  nav p {
+    font-size: 1.5rem;
+  }
+  
+  .home-section {
+    padding: 20px;
+  }
+  
+  .heading {
+    color: #333;
+  }
+  
+  .our-chalets {
+    padding: 20px;
+  }
+  
+  .our_chelets_heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .list {
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 0 10px;
+    background-color: #FFD166; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .list.active {
+    background-color: #06D6A0;
+    color: #fff; 
+  }
+  
+  .item_cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .item_card {
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease;
+  }
+  
+  .item_card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .item_img img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .item_details {
+    margin-top: 20px;
+  }
+  
+  .item_heading {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .description-delta {
+    color: #666;
+  }
+  
+  .price_cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .price {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .price:before {
+    content: "$";
+  }
+  
+  .footer {
+    background-color: #61bdff; /* لون خلفية الفوتر */
+    color: #fff; /* لون النص في الفوتر */
+    padding: 60px 20px; /* زيادة المسافة العلوية والسفلية */
+    text-align: center;
+  }
+  
+  .footer_details {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  
+  .footer_details > * {
+    margin-bottom: 20px; /* إضافة مسافة بين جميع البنود */
+  }
+  
+  .heading {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact_us ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .contact_us ul li {
+    margin-bottom: 10px;
+  }
+  
+  .contact_us ion-icon {
+    margin-right: 5px;
+  }
+  
+  .middle_contact {
+
+    max-width: 400px;
+  }
+  
+  .middle_contact p {
+    color: #fffefe;
+  }
+  
+  .social_links a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin:  6px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social_links :hover {
+    color: #fff;
+    transform: scale(1.2);
+  }
+  
+  .opening_hours {
+    text-align: right;
+  }
+  
+  @media (max-width: 768px) {
+    .item_cards {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  
+    .middle_contact {
+      max-width: 100%;
+    }
+  }
+  

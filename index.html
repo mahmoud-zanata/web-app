@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marina Real Estate</title>
+  <link rel="stylesheet" href="./css/home.css" />
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <p>Marina Real Estate</p>
+    </nav>
+  </header>
+
+  <section class="home-section">
+    <h3 class="heading">Speed of Buying and Selling</h3>
+  </section>
+
+  <section class="our-chalets">
+    <h3 class="our_chelets_heading">Our Chalets</h3>
+    <div class="navigation">
+      <p class="list active" data-filter="All">All</p>
+      <p class="list" data-filter="marina">Marina Delta</p>
+      <p class="list" data-filter="lagonze">Marina Lagonze</p>
+      <p class="list" data-filter="blue">Blue Beach</p>
+      <p class="list" data-filter="farma">Farma Beach</p>
+    </div>
+
+    <div class="item_cards">
+      <div class="item_card" data-item="marina" data-category="marina" id="1">
+        <div class="item_img">
+          <img src="./imegs/353170879.jpg" alt="" />
+        </div>
+        <div class="item_details">
+          <h4 class="item_heading">Marina Delta</h4>
+          <p class="description-delta">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            ipsam ratione minus reprehenderit voluptatum?
+          </p>
+          <div class="price_cart">
+            <p class="price">$2000</p>
+            <ion-icon name="cart"></ion-icon>
+          </div>
+        </div>
+      </div>
+
+      <div class="item_card" data-item="lagonze" data-category="lagonze" id="2">
+        <div class="item_img">
+          <img src="./imegs/images.jpeg" alt="" />
+        </div>
+        <div class="item_details">
+          <h4 class="item_heading">Marina Lagonze</h4>
+          <p class="description-delta">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            ipsam ratione minus reprehenderit voluptatum?
+          </p>
+          <div class="price_cart">
+            <p class="price">$1700</p>
+            <ion-icon name="cart"></ion-icon>
+          </div>
+        </div>
+      </div>
+
+      <div class="item_card" data-item="lagonze" data-category="lagonze" id="3">
+        <div class="item_img">
+          <img src="./imegs/images-4.jpeg" alt="" />
+        </div>
+        <div class="item_details">
+          <h4 class="item_heading">Marina Lagonze</h4>
+          <p class="description-delta">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            ipsam ratione minus reprehenderit voluptatum?
+          </p>
+          <div class="price_cart">
+            <p class="price">$1800</p>
+            <ion-icon name="cart"></ion-icon>
+          </div>
+        </div>
+      </div>
+
+      <div class="item_card" data-item="blue" data-category="blue" id="4">
+        <div class="item_img">
+          <img src="./imegs/images-3.jpeg" alt="" />
+        </div>
+        <div class="item_details">
+          <h4 class="item_heading">Blue Beach</h4>
+          <p class="description-delta">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            ipsam ratione minus reprehenderit voluptatum?
+          </p>
+          <div class="price_cart">
+            <p class="price">$10000</p>
+            <ion-icon name="cart"></ion-icon>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="footer_details">
+      <div class="contact_us">
+        <h3 class="heading">Contact Us</h3>
+        <ul>
+          <li>
+            <ion-icon name="call"></ion-icon>
+            <p>Call +20 1099675838</p>
+          </li>
+          <li>
+            <ion-icon name="mail"></ion-icon>
+            <p>mohamedalalfy2003@icloud.com</p>
+          </li>
+        </ul>
+      </div>
+      <div class="middle_contact">
+        <h3 class="heading">Real Estate</h3>
+        <p>
+          البدايه الجديده بين يديك اشتر تميزك # 
+        </p>
+        <div class="social_links">
+          <a href="https://www.facebook.com/profile.php?id=61553123777255&mibextid=LQQJ4d" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="رابط_صفحة_الإنستغرام" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+      </div>
+      
+      </div>
+      <div class="opening_hours">
+        <h3 class="heading">Opening Hours</h3>
+        <p>Everyday <br />10:00 AM to 10:00 PM</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="./main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.list').forEach(function (category) {
+        category.addEventListener('click', function () {
+          filterItems(this.getAttribute('data-filter'));
+        });
+      });
+
+      function filterItems(category) {
+        document.querySelectorAll('.item_card').forEach(function (item) {
+          if (category === 'All' || item.getAttribute('data-category') === category) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>
